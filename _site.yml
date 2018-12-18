@@ -1,0 +1,7 @@
+name: "my-website"
+output_dir: "."
+navbar:
+  title: "My Website"
+  left:
+    - text: "Project"
+      href: BDS_Final_Site.html

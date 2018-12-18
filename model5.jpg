@@ -1,0 +1,30 @@
+
+<table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Agree</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">raceOther</td><td>-0.427<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.251)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">raceWhite</td><td>-0.557<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.182)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">demrepubotherparty</td><td>-1.159<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.150)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">demrepubrepublican</td><td>-2.665<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.140)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">age_num</td><td>-0.023<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.004)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">income10</td><td>-0.128<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.015)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>3.868<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.260)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>1,973</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-937.335</td></tr>
+<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>1,888.671</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>

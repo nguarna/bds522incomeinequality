@@ -1,0 +1,57 @@
+
+<table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Agree</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">income10</td><td>-0.192<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.075)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">age_num</td><td>-0.032<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.005)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">raceOther</td><td>-0.984<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.400)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">raceWhite</td><td>0.097</td></tr>
+<tr><td style="text-align:left"></td><td>(0.290)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">demrepubotherparty</td><td>-0.612</td></tr>
+<tr><td style="text-align:left"></td><td>(0.412)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">demrepubrepublican</td><td>-0.309</td></tr>
+<tr><td style="text-align:left"></td><td>(0.538)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">raceOther:demrepubotherparty</td><td>1.032<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.560)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">raceWhite:demrepubotherparty</td><td>-0.510</td></tr>
+<tr><td style="text-align:left"></td><td>(0.429)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">raceOther:demrepubrepublican</td><td>-1.251<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.741)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">raceWhite:demrepubrepublican</td><td>-2.086<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.550)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">income10:demrepubotherparty</td><td>-0.086<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.041)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">income10:demrepubrepublican</td><td>-0.130<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.041)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">income10:age_num</td><td>0.003<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.001)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">income10:raceOther</td><td>0.066</td></tr>
+<tr><td style="text-align:left"></td><td>(0.068)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">income10:raceWhite</td><td>-0.038</td></tr>
+<tr><td style="text-align:left"></td><td>(0.050)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>3.734<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.371)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>1,973</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-908.967</td></tr>
+<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>1,849.933</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>

@@ -1,0 +1,24 @@
+
+<table style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>Agree</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">raceOther</td><td>-0.730<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.234)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">raceWhite</td><td>-1.351<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.166)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">age_num</td><td>-0.021<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.003)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">income10</td><td>-0.137<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.013)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>3.255<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.227)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>1,973</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-1,154.726</td></tr>
+<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>2,319.452</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>

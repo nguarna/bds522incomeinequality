@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Natalie Guarna" />
+
+<meta name="date" content="2018-12-19" />
+
+<title>BDS 522 FINAL</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">My Website</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="BDS_Final_Site.html">Project</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">BDS 522 FINAL</h1>
+<h3 class="subtitle"><em>Opinions on income inequality across American demographic groups</em></h3>
+<h4 class="author"><em>Natalie Guarna</em></h4>
+<h4 class="date"><em>12/19/2018</em></h4>
+
+</div>
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Income inequality is on the rise in the United States, where the gap between the wealthiest “one percent” and the much larger working classes is growing at an unprecedented rate. In 1980, the bottom half of the income distribution brought in 20% of total income; in 2014, that share had climbed to 12% (Belsie, 2018). Today, the income gap has reached its highest point since the Great Depression of 1928 (Pew Research Center, 2018).</p>
+<p>This escalating inequality can be attributed to the rate of income growth being much faster at the top of the income distribution than at the middle or the bottom (Sammartino, 2017).The mean pre-tax income per person in the bottom 50% of the income distribution remained static around $16,000. Meanwhile, for the top 1% of earners, income has increased dramatically since 1980. Back then, the income of the top 1% was 27 times the income of the bottom 50%; today, this figure has tripled to 81 times (Belsie, 2018).</p>
+<p>This rise in income inequality over the past three plus ia paradoxical considering increasing government spending on public programs like Social Security, Medicare, and Medicaid during this time period. Among all federal programs, these transfer programs are well known for providing the largest before-tax income supplements for low- and middle-income households. This gap has also continued to increase despite income taxes being more progressive than they were in 1980.</p>
+<p>Hence, in the face of several evidently failed efforts to close the income gap, the question stands as to whether the U.S. government should be doing more to reduce income inequality. Disagreements about this topic underlie policy debates on important issues taxation and welfare, and the significance of this question only grows as the gap continues to as well.</p>
+<p>Interestingly, survey data show that most Americans lack understanding of just how glaring this income gap is. In a 2011 study by Norton and Ariely, respondents from all demographic groups vastly underestimated the current level of wealth inequality in the U.S. On average, those surveyed believed that the wealthiest fifth of Americans held about 59%, while the actual number was at that time around 84%.</p>
+<p>Recent polling results also show that 66% of Americans supports raising taxes on high earners (Newport, 2011). The principles that underlie higher taxes for the wealthy are part of a larger ideology that attempting to reduce inequality by way of taxation and welfare programs is a responsibility of government. Interestingly, results from a 2011 Gallup Poll show that most Americans oppose the government actively reducing the income gap, yet support raising taxes on high earners and expanding programs like Medicaid. This curious contradiction engenders interest about agreement among Americans that government has a legitimate role in reducing income inequality.</p>
+<p>Most literature on this topic suggests a rather surprising level of consensus across all demographic groups regarding the optimal level of wealth inequality for our country. For instance, you would expect that wealthier people would show stronger aversion to a more equal distribution of wealth than would poorer people. In reality, all groups, from the bottom to the top of the income distribution, desired a more income equality than what they perceive there to be at present. All groups also, however, desired some level of inequality. Additionally, 54% of low-income people and 49% of middle-income people see the income gap as a big “problem” problem, only 36% of high-income people do. In fact, 33% of high-income group said the income gap was either a small problem or not a problem (DeSilver, 2013).</p>
+<p>These opinions may stem from how fair people consider the country’s economic system to be to different groups. Pew research found that low- and middle-income people were more likely to say the system favors the wealthy. Even so, 52% of high-income people agree (DeSilver, 2013).</p>
+<p>Norton and Ariely (2011) also found much more consensus than disagreement across political parties in their desire for more income equality, which may highlight a “normative” standard among Americans for the distribution of wealth, despite glaring dissent over related policies such as those that guide taxation and welfare. Again, a Gallup Poll (2011) showed that support for raising taxes on high earners is strong among both Democrats and Republicans, though support is stronger among Democrats. This result aligns with each party’s values. General liberal values posit that high earners pay their “fair share” in supporting the public resources through progressive taxation. Meanwhile, general conservative values consider government intervention an intrusion that risks stifling innovation and the free market.</p>
+<p>Again, these opinions could be tied to perceptions of fairness in the U.S. economic system. While 55% of Republicans say the economic system is fair to most people, 75% of Democrats and 63% independents say it favors the wealthy. Furthermore, 61% of Democrats and 50% of independents think the income gap is a very big problem, whole only 28% of Republicans did (DeSilver, 2013). These results accurately reflect the distribution of party values across the political spectrum.</p>
+<p>The issue of racial inequality is inextricably tied in the history and perpetuation of income inequality in the United States. The huge amount of literature that supports the existence of racial economic inequality shows that we are a long way from repairing the vestiges of institutional racism in the U.S. Over 50 years after the Civil Rights Act, income disparities between black and white family remain alarming close to what they were in 1968. From 1968 to 2016, even though racial disparities in family income rank narrowed significantly, this effect was “negated by changes to the national income distribution that resulted in rapid income growth for the richest—and most disproportionately white—few percentiles of the country combined with income stagnation for the poor and middle class” (Manduca, 2018). In terms of average income, the black households earned 61% of what white households earned in 2016 (Wilson, 2018). In light of these glaring disparities, race is an inevitable factor in perception of income inequality and related policy.</p>
+<p>Research regarding how age influences perceptions and aversion to income inequality is extremely limited. We do know, however, that inequality is much lower for younger households than for older households (Pew Research Center, 2018). This data may suggest that income and age interact in predicting opinion on this issue, such that older households with high income are significantly less similar to older households with low income than are young households with high income and young households with low income. Then again, it could simply be that young people across the income distribution are more open to income inequality than their senior counterparts because they undeniably tend to be more left leaning and progressive in general (Pew Research Center, 2018).</p>
+<p>A culminating theme throughout these somewhat confusing results is that Americans exhibit a general disconnect between their attitudes toward economic inequality and their public policy preferences. In light of this contradiction, it may be interesting to examine how Americans respond when asked directly whether or not the government should be involved in reducing income inequality. This more pointed, direct prompting may explain the disconnect between attitudes toward inequality and policy preferences.</p>
+<p>In the General Social Survey, respondents were asked whether “the government in Washington ought to reduce income differences between the rich and the poor, perhaps by the raising taxes of wealthy families or by giving income assistance to the poor,” or if “the government should not concern itself” with reducing this difference. I will examine the results of this survey to see how opinions differ across Americans based on income, political party, race or age.</p>
+<p>Essential question: Do Americans think the government should reduce income differences? Does this opinion vary by income, political party, race, or age?</p>
+<p>Ultimately, this question holds numerous far-reaching implications. Some evidence suggests that economic inequality is associated with increased crime, decreased health, lower levels of education, and increased political inequality (Wilkinson &amp; Pickett, 2009; Birdsong, 2015). Alleviating inequality could drive improvements in these areas, as well as economic growth and, more generally, increased net social welfare for the entire country. In order for policies to be enacted toward lowering inequality, policymakers need to be motivated by constituents who are invested in this change. Understanding which groups are invested at present will shed light on segments of the population awareness of inequality could be improved.</p>
+</div>
+<div id="data" class="section level2">
+<h2>Data</h2>
+<p>This study utilizes GSS data, which is regarded as one of the best sources for sociological and attitudinal trend data in the United States. Since 1972, the GSS has surveyed representative samples of the American population in order to monitor trends and transformations in attributes, attitudes, and behaviors. In order to assess the most recent sentiments regarding income inequality while maintaining a large sample size, this study uses data from the years 2010, 2012, 2014, and 2016. A sample of 1994 total observations is analyzed.</p>
+<p>Let’s take a look at the data set:</p>
+<p>Here is how the overall dataset is divided on the issue:</p>
+<p><img src="BDS_Final_Site_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<div id="income-distribution-and-mean-income-in-blue" class="section level3">
+<h3>Income Distribution and Mean Income (in blue):</h3>
+<p><img src="BDS_Final_Site_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+<div id="income-distribution-and-mean-age-in-red" class="section level3">
+<h3>Income Distribution and Mean Age (in red):</h3>
+<p><img src="BDS_Final_Site_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="proportions-by-party" class="section level3">
+<h3>Proportions by Party</h3>
+<p><img src="BDS_Final_Site_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>
+<div id="proportions-by-race" class="section level3">
+<h3>Proportions by Race</h3>
+<p><img src="BDS_Final_Site_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<div id="is-the-data-reprsentative" class="section level4">
+<h4>Is the Data Reprsentative?</h4>
+<p>Before analyzing this data, it is important to consider how representiative it is of the United State population. The fact that GSS survey is conducted over the phone raises questions of its representativeness. Phone surveys are known to be biased in their representation of certain groups, such as older demographics.</p>
+<p>According to the U.S. Census, median household income was $51,939 in 2013, which is nearly double the median income in this sample ($28,725) (DeNavas-Walt &amp; Proctor, 2014). Income distributions tend to be strongly right skewed, as is the case in this sample. As is the case with all right-skewed distributions, the median is far lower than the mean ($42,321).</p>
+<p>This population is not only poorer, but also older, than the U.S. population according to the U.S. Census. In 2013, the average age was 37.6 years old. This mean, however, includes people of all ages, while the GSS sample mean includes only a pool over people ages 18 and over, as that is who is eligible for the survey.</p>
+<p>This sample is composed of 45.7% Democrats, 21.8% Independents, and 32.4% Republicans. According to a 2013 Gallup Poll, a more accurate picture of the U.S. population by political party is 31% Democrat, 41% Independent, and 26% Republican (“Party Affiliation,” 2018). Results from a chi-square test show that there is a statistically significant difference in the political party proportions in this study versus in the United States as reported by Gallup. It is important to be mindful of these differences.</p>
+<p>This sample is also not highly representative in terms of race. (“Population Distribution,” 2017). The GSS data sample used here is composed of 17.8% black people, 72.4% white people and 9.79% of people of other races. According to national polling data, the American population is composed of 12% black people, 61% white people and 27% of people of other races. A chi-square test between the two samples shows that there is a statistically significant difference in the race proportions in the GSS sample versus in the United States. Again, these differences must be noted.</p>
+</div>
+</div>
+</div>
+<div id="analytical-strategy" class="section level2">
+<h2>Analytical Strategy</h2>
+<p>Based on a thorough review of literature and existing data, I have formed four specific alternate hypotheses to compare to the null:</p>
+<div id="hypotheses" class="section level4">
+<h4>Hypotheses:</h4>
+<p><strong>Null</strong>: There is no relationship between the explanatory variables - income, political party, race, or age - and agreeing that the government should reduce income differences (which means that the Y values predicted from the multiple logistic regression equation are no closer to the actual Y values than would be expect by chance).</p>
+<p><span class="math inline">\(H_0: B_i = 0\)</span></p>
+<p><strong>Alternate</strong>: one or more of the explanatory variables can be used to predict the odds of agreeing that the government should reduce income differences.</p>
+<p><span class="math inline">\(H_A: B_i ≠ 0\)</span></p>
+<p>Specific <span class="math inline">\(H_0\)</span> #1: Lower income will be related to more agreement that government should reduce income differences.</p>
+<p>Specific <span class="math inline">\(H_0\)</span> #2: Some of the covariance between the income and agreement for this question can be explained by age, race, and political party.</p>
+<p>Specific <span class="math inline">\(H_0\)</span> #3: Some of the covariance between the race and agreement for this question can be explained by political party.</p>
+<p>Specific <span class="math inline">\(H_0\)</span> #4: Some of the covariance between age and agreement can be explained by political party</p>
+</div>
+</div>
+<div id="methods" class="section level2">
+<h2>Methods</h2>
+<p>This study uses logistic regression analysis to predict the odds of agreeing that the government should reduce income differences based on four independent variables: income, political party, race, and age. Logistic regression is the appropriate regression analysis for predicting a dependent binary response variable - in this case, the two outcomes are agree and disagree. Logistic regression is useful for explaining the relationship between one binary response variable and one or more nominal or continuous variables.</p>
+<p>This study also uses the function “stepAIC” in R to select the best fitting multiple logistic regression model based on Akaike Information Criteria. The goal of this test is to find the model with the smallest AIC by removing or adding variables from the model.</p>
+</div>
+<div id="results" class="section level2">
+<h2>Results</h2>
+<p>The best fit model to explain this data is as follows:</p>
+<p>govern = B0 + B1(income) + B2(age) + B3(raceOther) + B4(White) + B5(otherParty) + B6(Repub) + B7(raceOther * otherParty) + B8(White * otherParty) + B9(raceOther * Repub) + B10(White * Repub) + B11(income * otherParty) + B12(income * Repub) + B13(income * age) + B14(income * raceOther) + B15(income * White)</p>
+<p>Here is the best fit model with the coefficients:</p>
+<p>govern = 3.734 - 1.924e-05 (income) - 0.03239 (age) - 0.9836(raceOther) + 0.09708(White) -0.6123(otherParty) -0.3088(Repub) + 1.032(raceOther * otherParty) - 0.5097(White * otherParty) - 1.251(raceOther * Repub) - 2.086(White * Repub) - 8.590e-06(income * otherParty) - 1.304e-05(income * Repub) + 2.812e-07(income * age) + 6.639e-06 (income * raceOther) - 3.837e-06 (income * White)</p>
+<p>Here is a regression table to summarize the coefficients for this model:</p>
+<table style="text-align:center">
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="1" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+Agree
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income10
+</td>
+<td>
+-0.192<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.075)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+age_num
+</td>
+<td>
+-0.032<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.005)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceOther
+</td>
+<td>
+-0.984<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.400)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceWhite
+</td>
+<td>
+0.097
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.290)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+demrepubotherparty
+</td>
+<td>
+-0.612
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.412)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+demrepubrepublican
+</td>
+<td>
+-0.309
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.538)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceOther:demrepubotherparty
+</td>
+<td>
+1.032<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.560)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceWhite:demrepubotherparty
+</td>
+<td>
+-0.510
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.429)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceOther:demrepubrepublican
+</td>
+<td>
+-1.251<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.741)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceWhite:demrepubrepublican
+</td>
+<td>
+-2.086<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.550)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income10:demrepubotherparty
+</td>
+<td>
+-0.086<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.041)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income10:demrepubrepublican
+</td>
+<td>
+-0.130<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.041)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income10:age_num
+</td>
+<td>
+0.003<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income10:raceOther
+</td>
+<td>
+0.066
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.068)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income10:raceWhite
+</td>
+<td>
+-0.038
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.050)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+3.734<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.371)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+1,973
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Likelihood
+</td>
+<td>
+-908.967
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Akaike Inf. Crit.
+</td>
+<td>
+1,849.933
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p>Due to a number of significantly p-values for various coefficients, we can safely reject the null hypothesis in support of the alternative hypothesis that one or more of the explanatory variables can be used to predict the odds of agreeing that the government should reduce income differences. Their significance signifies that these specific coefficients are significantly different than zero. Hence, one or more of the explanatory variables can be used to predict the odds of agreeing that the government should reduce income differences.</p>
+<p>For instance, changes in income, age, and race are related to changes in the response variable. There is also one particularly noteworthy point of significance among the interaction coefficients. The results suggest that the difference in agreement between political parties only varies among those who are white. The probability of agreement for white Democrats is 5% higher than for other race Democrats and 22.9% higher than for white Republicans. Among black and other races, being in any political party does not effect agreement on the issue, or at least not at a highly significant level.</p>
+<p>Among Republicans, the probability of black Republicans agreeing is 21.6% higher than white Republicans, and 24.4% higher than other race Republicans. These relations will be discussed in more detail below, as we compare these results to the specific alternate hypotheses made…</p>
+<div id="hypothesis-1" class="section level4">
+<h4>Hypothesis #1</h4>
+<p>First, let’s consider the effect of income, controlling for age, party and race.</p>
+<p>Each additional $10,000 of income is associated with 5.3% decline in the odds of agreeing that government is responsible for closing the income gap. This result is technically expected for a black 49 year old, but because the interaction effect of race and income is insignificant, there is no reason to expect a different result for black versus white or other race people.</p>
+<p>It is also worth noting that the effect of income on the response variable does not change when age is added to the model. In other words, adding age to the model does not significantly change how income affects the response variable. This indicates that age does not confound the relationship between income and opinion on the issue. Therefore, changes in opinion between people of low and high incomes can not simply be attributed to the differences in their ages because age does not explain any of the covariance between income and agreement that government should help close the income gap. The best fit model, however, does suggest that effect of income interacts with age in determining probability of agreement on this issue. In other words, the effect of income on response varies by age. Positive odds for this interaction indicates that the higher the income, the greater (more positive) the effect of age on odds of agreement is. This result simply suggests that age and income interact to effect the probability of agreement.</p>
+</div>
+<div id="hypothesis-2" class="section level4">
+<h4>Hypothesis #2</h4>
+<p>Hypothesis #2 is supported by the data. When we compare a logistic regression model in which income is the only explanatory variable to a multiple logistic regression model with income plus race, political party, and age, the results indicate these three three explanatory variables explain some of the covariance between income and agreement that the government is responsible for closing the income gap. The effect of income on agreement is weakened. For each additional $10,000 of income, the odds of agreement decrease from -14.1% to -12.0% when the other explanatory variables are added to the model. The two models are shown below.</p>
+<p>Model with only income: govern = B0 + B1(income)</p>
+<table style="text-align:center">
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="1" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+Agree
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Income
+</td>
+<td>
+-0.152<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.013)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+1.130<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.073)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+1,992
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Likelihood
+</td>
+<td>
+-1,246.574
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Akaike Inf. Crit.
+</td>
+<td>
+2,497.147
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p>Model with income and age, race, and party: govern = B0 + B1(income) + B2(age) + B3(raceOther) + B4(White) + B5(otherParty) + B6(Repub)</p>
+<table style="text-align:center">
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="1" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+Agree
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income10
+</td>
+<td>
+-0.128<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.015)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+age_num
+</td>
+<td>
+-0.023<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.004)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceOther
+</td>
+<td>
+-0.427<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.251)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceWhite
+</td>
+<td>
+-0.557<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.182)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+demrepubotherparty
+</td>
+<td>
+-1.159<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.150)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+demrepubrepublican
+</td>
+<td>
+-2.665<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.140)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+3.868<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.260)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+1,973
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Likelihood
+</td>
+<td>
+-937.335
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Akaike Inf. Crit.
+</td>
+<td>
+1,888.671
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+</div>
+<div id="hypothesis-3" class="section level4">
+<h4>Hypothesis #3</h4>
+<p>Hypothesis #3 is also supported by the data. When we compare a model without political party to a model with political party (in other words, when we control for political party), the difference in the probability of agreement between races becomes larger. Specifically, the difference in probability of agreement for white versus black people rises from 21% less likely to agree to 36% less likely. This result indicates that political party accounts for some of the covariance between race and agreement that the government is responsible for closing the income gap.</p>
+<p>Model without political party: govern = B0 + B1(raceOther) + B2(White) + B3(age) + B4(income)</p>
+<table style="text-align:center">
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="1" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+Agree
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceOther
+</td>
+<td>
+-0.730<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.234)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceWhite
+</td>
+<td>
+-1.351<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.166)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+age_num
+</td>
+<td>
+-0.021<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.003)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income10
+</td>
+<td>
+-0.137<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.013)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+3.255<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.227)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+1,973
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Likelihood
+</td>
+<td>
+-1,154.726
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Akaike Inf. Crit.
+</td>
+<td>
+2,319.452
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p>Model with political party: govern = B0 + B1(raceOther) + B2(raceWhite) + B3(otherParty) + B4(Repub) + B5(age) + B6(income)</p>
+<table style="text-align:center">
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="1" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+Agree
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceOther
+</td>
+<td>
+-0.427<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.251)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+raceWhite
+</td>
+<td>
+-0.557<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.182)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+demrepubotherparty
+</td>
+<td>
+-1.159<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.150)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+demrepubrepublican
+</td>
+<td>
+-2.665<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.140)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+age_num
+</td>
+<td>
+-0.023<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.004)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+income10
+</td>
+<td>
+-0.128<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.015)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+3.868<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.260)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+1,973
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Likelihood
+</td>
+<td>
+-937.335
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Akaike Inf. Crit.
+</td>
+<td>
+1,888.671
+</td>
+</tr>
+<tr>
+<td colspan="2" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td style="text-align:right">
+<sup><em></sup>p&lt;0.1; <sup><strong></sup>p&lt;0.05; <sup></strong></em></sup>p&lt;0.01
+</td>
+</tr>
+</table>
+<p>The data’s support for Hypothesis #3 indicates that race moderates the relationship between income and agreement. The general trend seems to be that white people tend to be Republicans more than black people, and Republicans are more likely to disagree that government is responsible for closing the income gap. This result is unsurprising based on Republican values of self-sufficiency and small government. In fact, a key republican value is the elimination of wealth transfers.</p>
+</div>
+<div id="hypothesis-4" class="section level4">
+<h4>Hypothesis #4</h4>
+<p>Hypothesis #4 is not supported by the data. Returning to the tables under Hypothesis #3 above, we can compare a model without political party to a model with political party. Results suggest that the change in probability of agreement for each additional year of life does decrease, but not significantly. The odds of agreement for each additional year of life only decreases by 0.1%. Even when age is transformed into 10-year age groups (i.e., 18-28; 28-38, and so on), the difference in probability between the oldest age group and the youngest age group is not significant. This result indicates that political party does not account for any of the covariance between age and agreement that the government is responsible for closing the income gap.</p>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>Certain results from this analysis point to interesting trends in differential groups across the U.S. population.</p>
+<p>First, it is interesting to note that higher income is associated with lower odds of agreeing that the government should close the income gap. Previous polling has shown that higher income people are less likely to consider the income gap to be a major issue facing the United States. Hence, it doesn’t come as much surprise that this demographic is less likely to agree that the government should act on this problem, as they don’t see the issue has highly problematic to begin with. They are also less affected by the tolls of income inequality, so they do not see it as an issue on which the government should be spending tax-payer dollars. It is important to remember, however, that some of the effect of income on agreement can be explained by some other explanatory variables, like age and party; high income alone isn’t quite as strongly predictive of disagreement in this context.</p>
+<p>Another demographic group associated with lower agreement is white Republicans. From what we know about Republican values of small government and self-sufficiency, this result also makes sense. Likewise, it is supported indirectly by evidence suggesting that Republicans don’t believe as strongly that our economy favors the wealthy and also don’t see income inequality as a large issue.</p>
+<p>What we have learned here regarding opinions on government’s responsibility in closing the income gap, combined with the information from previous research, can be applied to fostering positive social change. The most immediate application of such results could be identifying groups who should be targeted for education initiatives about the growth and implications of income inequality. For instance, white Republicans seem to be less likely to agree that the government should reduce the income gap. Whether this opinion is driven by values, lack of awareness of the issue, or some other explanation, an informational campaign targeted at this group would be justifiable from the results of this research. Such a campaign might increase overall awareness of the issue and attract eventual political attention, leading to progressive policy change.</p>
+<p>One limitations of this study is that it is not completely representative of the United States population according to the Census. This sample is older, poorer, and whiter than the U.S. population, so we must be wary of how accurately these results represent reality in this country.</p>
+<p>In the future, more research is needed to verify these results with a more nationally representative sample. Such data might be better suited for other means of collection besides telephones survey.</p>
+<p>It may also be worthwhile to analyze how the trends observed here change across time, especially given the chaotic and constantly changing political climate that exists in the United States today.</p>
+<p>This analysis contributes to the growing body of literature devoted to examining the growing issue of income inequality. Before progress can be made toward reducing poverty and bettering millions of American lives, this country must accept that income inequality is an issue worthy of our government’s attention and, furthermore of our own. Before the problem gets worse, we must find ways to make it better. The first step is awareness.</p>
+</div>
+<div id="references" class="section level2">
+<h2>References</h2>
+<p>Belsie, L. (2018). New Evidence on Income Inequality. The National Bureau of Economic Research. Washington, D.C.</p>
+<p>Birdsong, N. (2015, February 5). The Consequences of Economic Inequality. Seven Pillars Institute. Retrieved from <a href="https://sevenpillarsinstitute.org/consequences-economic-inequality/" class="uri">https://sevenpillarsinstitute.org/consequences-economic-inequality/</a></p>
+<p>DeNavas-Walt, C., &amp; Proctor, B.D (2014) Current Population Reports: Income and Poverty in the United States: 2013. U.S. Census Bureau, Washington, DC, 60-249.</p>
+<p>DeSilver, D. (2013, December 05). U.S. income inequality, on rise for decades, is now highest since 1928. Pew Research. Retrieved from <a href="http://www.pewresearch.org/fact-tank/2013/12/05/u-s-income-inequality-on-rise-for-decades-is-now-highest-since-1928/" class="uri">http://www.pewresearch.org/fact-tank/2013/12/05/u-s-income-inequality-on-rise-for-decades-is-now-highest-since-1928/</a></p>
+<p>Manduca, R. (2018). Income Inequality and the Persistence of Racial Economic Disparities. Sociological Science, 5, 182-205.</p>
+<p>Newport, F. (2011, September 20). Americans Favor Jobs Plan Proposals, Including Taxing Rich. Gallup, Inc. Retrieved from <a href="https://news.gallup.com/poll/149567/americans-favor-jobs-plan-proposals-including-taxing-rich.aspx" class="uri">https://news.gallup.com/poll/149567/americans-favor-jobs-plan-proposals-including-taxing-rich.aspx</a></p>
+<p>Norton, M. I., &amp; Ariely, D. (2011). Building a better America—One wealth quintile at a time. Perspectives on psychological science, 6(1), 9-12.</p>
+<p>Party Affiliation (2018). Gallup Poll, 2018, #15370. Gallup Canada Inc. Retrieved from: <a href="https://news.gallup.com/poll/15370/party-affiliation.aspx" class="uri">https://news.gallup.com/poll/15370/party-affiliation.aspx</a></p>
+<p>Pew Research Center: U.S. Politics and Policy (2018, March 1). The Generation Gap in American Politics: Washington, D.C. Retrieved from <a href="http://www.people-press.org/2018/03/01/the-generation-gap-in-american-politics/" class="uri">http://www.people-press.org/2018/03/01/the-generation-gap-in-american-politics/</a></p>
+<p>Population Distribution by Race/Ethnicity (2017). The Henry J. Kaiser Family Foundation, San Fransisco, CA. Retrieved from <a href="https://www.kff.org/other/state-indicator/distribution-by-raceethnicity/?currentTimeframe=0&amp;sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D">https://www.kff.org/other/state-indicator/distribution-by-raceethnicity/?currentTimeframe=0&amp;sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D</a></p>
+<p>Sammartino, F. (2017, June 15). Taxes and Income Inequality. Tax Policy Center, Urban Institute and Brookings Institution. Retrieved from <a href="https://www.taxpolicycenter.org/sites/default/files/publication/142251/2001310-taxes-and-income-inequality.pdf" class="uri">https://www.taxpolicycenter.org/sites/default/files/publication/142251/2001310-taxes-and-income-inequality.pdf</a></p>
+<p>Wilkinson, R., &amp; Pickett, K. (2009). The spirit level: Why greater equality makes societies stronger. New York: Bloomsbury.</p>
+<p>Wilson, V. (2018, January 18). Racial inequalities in wages, income, and wealth show that MLK’s work remains unfinished. Retrieved November 18, 2018, from <a href="https://www.epi.org/publication/racial-inequalities-in-wages-income-and-wealth-show-that-mlks-work-remains-unfinished/" class="uri">https://www.epi.org/publication/racial-inequalities-in-wages-income-and-wealth-show-that-mlks-work-remains-unfinished/</a></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
