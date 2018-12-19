@@ -47,7 +47,7 @@ dplyr::count(GSS, race)
 
 ## Introduction
 
-Income inequality is on the rise in the United States, where the gap between the wealthiest “one percent” and the much larger working classes is growing at an unprecedented rate. In 1980, the bottom half of the income distribution brought in 20% of total income; in 2014, that share had climbed to 12% (Belsie, 2018). Today, the income gap has reached its highest point since the Great Depression of 1928 (Pew Research Center, 2018).
+Income inequality is on the rise in the United States, where the gap between the wealthiest “one percent” and the much larger working classes is growing at an unprecedented rate. In 1980, the bottom half of the income distribution brought in 20% of total income; in 2014, their share had fallen to 12% (Belsie, 2018). Today, the income gap has reached its highest point since the Great Depression of 1928 (Pew Research Center, 2018).
 
 This escalating inequality can be attributed to the rate of income growth being much faster at the top of the income distribution than at the middle or the bottom (Sammartino, 2017).The mean pre-tax income per person in the bottom 50% of the income distribution remained static around $16,000. Meanwhile, for the top 1% of earners, income has increased dramatically since 1980. Back then, the income of the top 1% was 27 times the income of the bottom 50%; today, this figure has tripled to 81 times (Belsie, 2018).
 

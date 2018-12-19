@@ -2,4 +2,4 @@
 title: "My Website"
 ---
 
-Hello, and welcome to the website for my BDS 522 final project! Please click the "Project" tab above to access my work. Thank you, and enjoy!
+Hello, and welcome to the website for my BDS 522 final project! Please click the "Project" tab above to access my work. Thank you and enjoy!
